@@ -1,0 +1,236 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="50%" stop-color="#0e172a" />
+      <stop offset="100%" stop-color="#141e33" />
+    </linearGradient>
+
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9" />
+    </linearGradient>
+
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.2" />
+      <stop offset="50%" stop-color="#818cf8" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#34d399" stop-opacity="0.9" />
+    </linearGradient>
+
+    <!-- Glow Filters -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.6" />
+    </filter>
+
+    <style>
+      @keyframes pulseTrack {
+        0% { stroke-dashoffset: 600; }
+        100% { stroke-dashoffset: 0; }
+      }
+      @keyframes floatSlow {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-8px); }
+      }
+      @keyframes floatAlt {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(6px); }
+      }
+      @keyframes blinkGlow {
+        0%, 100% { opacity: 0.9; transform: scale(1); }
+        50% { opacity: 0.4; transform: scale(0.85); }
+      }
+      @keyframes packetFlow {
+        0% { cx: 120; cy: 290; opacity: 0; }
+        15% { opacity: 1; }
+        85% { opacity: 1; }
+        100% { cx: 1080; cy: 290; opacity: 0; }
+      }
+
+      .bg-grid {
+        stroke: #334155;
+        stroke-opacity: 0.15;
+        stroke-width: 1;
+      }
+      .pipeline-track {
+        stroke: #334155;
+        stroke-width: 3;
+        stroke-dasharray: 6 6;
+      }
+      .pipeline-active {
+        stroke: url(#lineGrad);
+        stroke-width: 3.5;
+        stroke-dasharray: 400;
+        animation: pulseTrack 5s linear infinite;
+      }
+      .float-card-1 {
+        animation: floatSlow 6s ease-in-out infinite;
+        transform-origin: center;
+      }
+      .float-card-2 {
+        animation: floatAlt 7s ease-in-out infinite;
+        transform-origin: center;
+      }
+      .beacon {
+        animation: blinkGlow 2.5s ease-in-out infinite;
+        transform-origin: center;
+      }
+      .packet {
+        animation: packetFlow 4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+      }
+      .title-text {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 800;
+        font-size: 46px;
+        letter-spacing: -0.5px;
+      }
+      .subtitle-text {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        letter-spacing: 0.2px;
+        fill: #94a3b8;
+      }
+      .badge-text {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 600;
+        font-size: 12px;
+      }
+    </style>
+  </defs>
+
+  <!-- Deep Backdrop -->
+  <rect width="1200" height="360" fill="url(#bgGrad)" rx="16" />
+
+  <!-- Technical Grid Pattern Background -->
+  <g class="bg-grid">
+    <line x1="0" y1="60" x2="1200" y2="60" />
+    <line x1="0" y1="120" x2="1200" y2="120" />
+    <line x1="0" y1="180" x2="1200" y2="180" />
+    <line x1="0" y1="240" x2="1200" y2="240" />
+    <line x1="0" y1="300" x2="1200" y2="300" />
+    <line x1="150" y1="0" x2="150" y2="360" />
+    <line x1="300" y1="0" x2="300" y2="360" />
+    <line x1="450" y1="0" x2="450" y2="360" />
+    <line x1="600" y1="0" x2="600" y2="360" />
+    <line x1="750" y1="0" x2="750" y2="360" />
+    <line x1="900" y1="0" x2="900" y2="360" />
+    <line x1="1050" y1="0" x2="1050" y2="360" />
+  </g>
+
+  <!-- Animated Pipeline Flow Line in Lower Third Background -->
+  <path d="M 120 290 L 1080 290" class="pipeline-track" />
+  <path d="M 120 290 L 1080 290" class="pipeline-active" />
+  <circle r="5" fill="#38bdf8" filter="url(#glow)" class="packet" />
+
+  <!-- Pipeline Stage Nodes (Lower Third) -->
+  <!-- Build -->
+  <g transform="translate(140, 290)">
+    <circle r="12" fill="#0f172a" stroke="#38bdf8" stroke-width="2.5" />
+    <circle r="4" fill="#38bdf8" />
+    <text y="24" text-anchor="middle" class="badge-text" fill="#64748b">BUILD</text>
+  </g>
+
+  <!-- Test -->
+  <g transform="translate(370, 290)">
+    <circle r="12" fill="#0f172a" stroke="#818cf8" stroke-width="2.5" />
+    <circle r="4" fill="#818cf8" />
+    <text y="24" text-anchor="middle" class="badge-text" fill="#64748b">VERIFY</text>
+  </g>
+
+  <!-- Staging Gate -->
+  <g transform="translate(600, 290)">
+    <circle r="12" fill="#0f172a" stroke="#c084fc" stroke-width="2.5" />
+    <circle r="4" fill="#c084fc" />
+    <text y="24" text-anchor="middle" class="badge-text" fill="#64748b">STAGE</text>
+  </g>
+
+  <!-- Canary Rollout -->
+  <g transform="translate(830, 290)">
+    <circle r="12" fill="#0f172a" stroke="#f59e0b" stroke-width="2.5" />
+    <circle r="4" fill="#f59e0b" />
+    <text y="24" text-anchor="middle" class="badge-text" fill="#64748b">CANARY</text>
+  </g>
+
+  <!-- Production / Healthy -->
+  <g transform="translate(1060, 290)">
+    <circle r="14" fill="#064e3b" stroke="#10b981" stroke-width="2.5" />
+    <circle r="5" fill="#34d399" filter="url(#glow)" class="beacon" />
+    <text y="24" text-anchor="middle" class="badge-text" fill="#34d399">PROD</text>
+  </g>
+
+  <!-- Floating Ambient Metric Cards (Upper Right / Corners, Non-Obscuring) -->
+  <g class="float-card-1" transform="translate(940, 36)" filter="url(#shadow)">
+    <rect width="210" height="62" rx="10" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.2" />
+    <circle cx="22" cy="31" r="5" fill="#34d399" class="beacon" />
+    <text x="36" y="27" class="badge-text" fill="#94a3b8">Continuous Delivery</text>
+    <text x="36" y="47" class="badge-text" font-size="13" font-weight="700" fill="#f8fafc">100% Sync • Health: OK</text>
+  </g>
+
+  <g class="float-card-2" transform="translate(970, 115)" filter="url(#shadow)">
+    <rect width="180" height="52" rx="10" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.2" />
+    <circle cx="20" cy="26" r="4" fill="#38bdf8" />
+    <text x="32" y="23" class="badge-text" fill="#94a3b8">Strategy</text>
+    <text x="32" y="41" class="badge-text" font-weight="700" fill="#38bdf8">Progressive Canary</text>
+  </g>
+
+  <!-- Ambient Glow Behind Main Title -->
+  <circle cx="260" cy="120" r="140" fill="#38bdf8" opacity="0.08" filter="url(#glow)" />
+  <circle cx="580" cy="140" r="160" fill="#818cf8" opacity="0.07" filter="url(#glow)" />
+
+  <!-- FOREGROUND: Header Brand & Typography (Clean, Dominant, Non-Overlapped) -->
+  <g transform="translate(70, 52)">
+    <!-- Small Category Pill -->
+    <g>
+      <rect width="232" height="28" rx="14" fill="#1e293b" stroke="#3b82f6" stroke-opacity="0.4" stroke-width="1" />
+      <circle cx="14" cy="14" r="4" fill="#38bdf8" />
+      <text x="26" y="19" class="badge-text" fill="#38bdf8" font-size="11">DEVOPS &amp; GITOPS DIRECTORY</text>
+    </g>
+
+    <!-- Main Title with Gradient Fill -->
+    <text x="0" y="88" class="title-text" fill="url(#accentGrad)" filter="url(#shadow)">
+      Awesome Release Management
+    </text>
+
+    <!-- Subtitle / Tagline -->
+    <text x="2" y="132" class="subtitle-text">
+      Curated Directory of SaaS Orchestrators, GitOps Platforms &amp; Progressive Delivery Tools
+    </text>
+
+    <!-- Feature Pills -->
+    <g transform="translate(2, 160)">
+      <!-- Pill 1 -->
+      <rect width="145" height="26" rx="6" fill="#1e293b" stroke="#334155" />
+      <text x="72" y="17" text-anchor="middle" class="badge-text" fill="#cbd5e1">🚀 Deployment CD</text>
+
+      <!-- Pill 2 -->
+      <g transform="translate(155, 0)">
+        <rect width="135" height="26" rx="6" fill="#1e293b" stroke="#334155" />
+        <text x="67" y="17" text-anchor="middle" class="badge-text" fill="#cbd5e1">⚡ GitOps Sync</text>
+      </g>
+
+      <!-- Pill 3 -->
+      <g transform="translate(300, 0)">
+        <rect width="165" height="26" rx="6" fill="#1e293b" stroke="#334155" />
+        <text x="82" y="17" text-anchor="middle" class="badge-text" fill="#cbd5e1">🛡️ Release Governance</text>
+      </g>
+
+      <!-- Pill 4 -->
+      <g transform="translate(475, 0)">
+        <rect width="155" height="26" rx="6" fill="#1e293b" stroke="#334155" />
+        <text x="77" y="17" text-anchor="middle" class="badge-text" fill="#cbd5e1">🎯 Automated Rollback</text>
+      </g>
+    </g>
+  </g>
+</svg>
