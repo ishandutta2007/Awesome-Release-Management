@@ -65,63 +65,63 @@ The following table evaluates premier enterprise SaaS release orchestration and 
 
 ## 🔓 Open-Source GitHub Projects
 
-The following list curates top open-source projects for self-hosted release management, GitOps continuous delivery, versioning automation, and progressive rollouts. The list is **strictly sorted in descending order by GitHub star count**. Each repository displays its official live GitHub star count badge linking directly to its stargazers page.
+The following list curates top open-source projects for self-hosted release management, GitOps continuous delivery, versioning automation, and progressive rollouts. The list is **strictly sorted in descending order by GitHub Stars_Count**. Each repository displays its official live GitHub Stars_Count badge linking directly to its stargazers page.
 
-1. **[Drone](https://github.com/drone/drone)** [![GitHub stars](https://img.shields.io/github/stars/drone/drone?style=social&color=white)](https://github.com/drone/drone/stargazers)  
+1. **[Drone](https://github.com/drone/drone)** [![GitHub_Stars](https://img.shields.io/github/stars/drone/drone?style=social&color=white)](https://github.com/drone/drone/stargazers)  
    *Container-native continuous delivery and release automation server (Apache 2.0).* Executes each pipeline step inside an isolated Docker container with zero host-level dependency pollution. Features YAML-based delivery pipelines, environment promotion gates, approval steps, and native integrations with GitHub, GitLab, and Gitea.
 
-2. **[Jenkins](https://github.com/jenkinsci/jenkins)** [![GitHub stars](https://img.shields.io/github/stars/jenkinsci/jenkins?style=social&color=white)](https://github.com/jenkinsci/jenkins/stargazers)  
+2. **[Jenkins](https://github.com/jenkinsci/jenkins)** [![GitHub_Stars](https://img.shields.io/github/stars/jenkinsci/jenkins?style=social&color=white)](https://github.com/jenkinsci/jenkins/stargazers)  
    *The foundational open-source automation and release server (MIT).* Powers thousands of enterprise release workflows through declarative and scripted Groovy Pipelines. With over 1,800 plugins (including Release, Blue Ocean, Pipeline Milestone, and Credentials Binding), Jenkins coordinates cross-platform deployments across bare metal, virtual machines, and container clusters.
 
-3. **[Argo CD](https://github.com/argoproj/argo-cd)** [![GitHub stars](https://img.shields.io/github/stars/argoproj/argo-cd?style=social&color=white)](https://github.com/argoproj/argo-cd/stargazers)  
+3. **[Argo CD](https://github.com/argoproj/argo-cd)** [![GitHub_Stars](https://img.shields.io/github/stars/argoproj/argo-cd?style=social&color=white)](https://github.com/argoproj/argo-cd/stargazers)  
    *Declarative, Kubernetes-native GitOps continuous delivery tool (CNCF Graduated, Apache 2.0).* Continuously monitors declarative Git repositories (Helm, Kustomize, plain manifests) and reconciles live cluster state against the declared target. Features real-time drift detection, automated self-healing, multi-cluster control plane management, SSO/RBAC, and a rich visualization web UI.
 
-4. **[semantic-release](https://github.com/semantic-release/semantic-release)** [![GitHub stars](https://img.shields.io/github/stars/semantic-release/semantic-release?style=social&color=white)](https://github.com/semantic-release/semantic-release/stargazers)  
+4. **[semantic-release](https://github.com/semantic-release/semantic-release)** [![GitHub_Stars](https://img.shields.io/github/stars/semantic-release/semantic-release?style=social&color=white)](https://github.com/semantic-release/semantic-release/stargazers)  
    *Fully automated version management and package publishing framework (MIT).* Completely eliminates human intervention in the release lifecycle by parsing commit messages according to the Conventional Commits specification. Automatically determines the next semantic version number (major, minor, patch), generates release notes/changelogs, creates git tags, and publishes distribution packages across package registries.
 
-5. **[GoReleaser](https://github.com/goreleaser/goreleaser)** [![GitHub stars](https://img.shields.io/github/stars/goreleaser/goreleaser?style=social&color=white)](https://github.com/goreleaser/goreleaser/stargazers)  
+5. **[GoReleaser](https://github.com/goreleaser/goreleaser)** [![GitHub_Stars](https://img.shields.io/github/stars/goreleaser/goreleaser?style=social&color=white)](https://github.com/goreleaser/goreleaser/stargazers)  
    *Automated cross-compilation and release delivery tool (Apache 2.0).* Builds Go binaries for multiple architectures, packages them into Docker images, Homebrew taps, RPM/DEB distributions, and Snapcraft packages, and publishes checksummed assets and signed release notes directly to GitHub Releases, GitLab Releases, or custom artifact repositories.
 
-6. **[Spinnaker](https://github.com/spinnaker/spinnaker)** [![GitHub stars](https://img.shields.io/github/stars/spinnaker/spinnaker?style=social&color=white)](https://github.com/spinnaker/spinnaker/stargazers)  
+6. **[Spinnaker](https://github.com/spinnaker/spinnaker)** [![GitHub_Stars](https://img.shields.io/github/stars/spinnaker/spinnaker?style=social&color=white)](https://github.com/spinnaker/spinnaker/stargazers)  
    *Enterprise multi-cloud continuous delivery and release platform (Apache 2.0).* Originally developed by Netflix, Spinnaker coordinates complex, highly resilient deployments across AWS EC2, Google Cloud Platform, Microsoft Azure, and Kubernetes. Features automated canary analysis (Kayenta), blue/green (red/black) rollouts, rolling deployment strategies, and manual judgment promotion gates.
 
-7. **[Atlantis](https://github.com/runatlantis/atlantis)** [![GitHub stars](https://img.shields.io/github/stars/runatlantis/atlantis?style=social&color=white)](https://github.com/runatlantis/atlantis/stargazers)  
+7. **[Atlantis](https://github.com/runatlantis/atlantis)** [![GitHub_Stars](https://img.shields.io/github/stars/runatlantis/atlantis?style=social&color=white)](https://github.com/runatlantis/atlantis/stargazers)  
    *Pull-request driven Terraform and OpenTofu release automation tool (Apache 2.0).* Streamlines infrastructure release management by running `terraform plan` and `terraform apply` directly within GitHub, GitLab, or Bitbucket PR comments. Enforces mandatory approval policies, state locking across branches, and transparent infrastructure audit trails prior to merging into production.
 
-8. **[Tekton Pipelines](https://github.com/tektoncd/pipeline)** [![GitHub stars](https://img.shields.io/github/stars/tektoncd/pipeline?style=social&color=white)](https://github.com/tektoncd/pipeline/stargazers)  
+8. **[Tekton Pipelines](https://github.com/tektoncd/pipeline)** [![GitHub_Stars](https://img.shields.io/github/stars/tektoncd/pipeline?style=social&color=white)](https://github.com/tektoncd/pipeline/stargazers)  
    *Standardized, cloud-native CI/CD and release pipeline primitives for Kubernetes (CNCF Graduated, Apache 2.0).* Defines release workflows as reusable Kubernetes Custom Resource Definitions (`Tasks`, `Pipelines`, `PipelineRuns`). Serves as the underlying engine for enterprise delivery systems like Red Hat OpenShift Pipelines and Konflux.
 
-9. **[release-it](https://github.com/release-it/release-it)** [![GitHub stars](https://img.shields.io/github/stars/release-it/release-it?style=social&color=white)](https://github.com/release-it/release-it/stargazers)  
+9. **[release-it](https://github.com/release-it/release-it)** [![GitHub_Stars](https://img.shields.io/github/stars/release-it/release-it?style=social&color=white)](https://github.com/release-it/release-it/stargazers)  
    *Interactive CLI tool and build-pipeline release automator (MIT).* Automates semantic version bumping, git commit/tagging/pushing, release notes generation, package publishing (npm, PyPI, Maven, etc.), and GitHub/GitLab release creation. Supports interactive CLI prompts for manual control or automated execution in CI/CD environments.
 
-10. **[Flux 2](https://github.com/fluxcd/flux2)** [![GitHub stars](https://img.shields.io/github/stars/fluxcd/flux2?style=social&color=white)](https://github.com/fluxcd/flux2/stargazers)  
+10. **[Flux 2](https://github.com/fluxcd/flux2)** [![GitHub_Stars](https://img.shields.io/github/stars/fluxcd/flux2?style=social&color=white)](https://github.com/fluxcd/flux2/stargazers)  
     *Composable, multi-tenant GitOps continuous delivery engine for Kubernetes (CNCF Graduated, Apache 2.0).* Built from the ground up using the Kubernetes API and controller runtime. Leverages GitRepository, OCI, and HelmRepository sources to orchestrate continuous deployment, automated image update automation, and progressive multi-cluster delivery.
 
-11. **[Woodpecker CI](https://github.com/woodpecker-ci/woodpecker)** [![GitHub stars](https://img.shields.io/github/stars/woodpecker-ci/woodpecker?style=social&color=white)](https://github.com/woodpecker-ci/woodpecker/stargazers)  
+11. **[Woodpecker CI](https://github.com/woodpecker-ci/woodpecker)** [![GitHub_Stars](https://img.shields.io/github/stars/woodpecker-ci/woodpecker?style=social&color=white)](https://github.com/woodpecker-ci/woodpecker/stargazers)  
     *Community-driven, container-based continuous integration and deployment engine (Apache 2.0).* A community fork of Drone that executes pipeline workflows inside isolated containers. Features a lightweight footprint, declarative pipeline syntax, environment promotions, multi-arch support, and zero vendor lock-in.
 
-12. **[Release Please](https://github.com/googleapis/release-please)** [![GitHub stars](https://img.shields.io/github/stars/googleapis/release-please?style=social&color=white)](https://github.com/googleapis/release-please/stargazers)  
+12. **[Release Please](https://github.com/googleapis/release-please)** [![GitHub_Stars](https://img.shields.io/github/stars/googleapis/release-please?style=social&color=white)](https://github.com/googleapis/release-please/stargazers)  
     *Automated release PR and versioning bot developed by Google (Apache 2.0).* Analyzes Conventional Commits across git history to maintain a dedicated "Release PR". Automatically updates changelog files and version bumps across multiple languages and monorepos, triggering asset builds and package releases only when the Release PR is approved and merged.
 
-13. **[GoCD](https://github.com/gocd/gocd)** [![GitHub stars](https://img.shields.io/github/stars/gocd/gocd?style=social&color=white)](https://github.com/gocd/gocd/stargazers)  
+13. **[GoCD](https://github.com/gocd/gocd)** [![GitHub_Stars](https://img.shields.io/github/stars/gocd/gocd?style=social&color=white)](https://github.com/gocd/gocd/stargazers)  
     *Continuous delivery server with first-class Value Stream Mapping (Apache 2.0).* Specialized in modeling complex delivery pipelines with sequential and parallel dependencies, fan-in/fan-out dependency trees, environment promotion gates, and end-to-end cryptographic traceability from code commit to production deployment.
 
-14. **[Flagger](https://github.com/fluxcd/flagger)** [![GitHub stars](https://img.shields.io/github/stars/fluxcd/flagger?style=social&color=white)](https://github.com/fluxcd/flagger/stargazers)  
+14. **[Flagger](https://github.com/fluxcd/flagger)** [![GitHub_Stars](https://img.shields.io/github/stars/fluxcd/flagger?style=social&color=white)](https://github.com/fluxcd/flagger/stargazers)  
     *Progressive delivery Kubernetes operator (CNCF Flux Project, Apache 2.0).* Automates release promotions for Kubernetes workloads using Istio, Linkerd, Contour, Gloo, or NGINX service meshes. Executes automated Canary, A/B Testing, and Blue/Green rollouts with metric-based analysis against Prometheus, Datadog, or New Relic, triggering automatic rollback on anomaly detection.
 
-15. **[Kargo](https://github.com/akuity/kargo)** [![GitHub stars](https://img.shields.io/github/stars/akuity/kargo?style=social&color=white)](https://github.com/akuity/kargo/stargazers)  
+15. **[Kargo](https://github.com/akuity/kargo)** [![GitHub_Stars](https://img.shields.io/github/stars/akuity/kargo?style=social&color=white)](https://github.com/akuity/kargo/stargazers)  
     *Cloud-native GitOps release promotion lifecycle manager (Apache 2.0).* Created by the founders of Argo CD, Kargo bridges the gap between CI and GitOps delivery. Models multi-environment promotion pipelines (e.g., Dev → Test → Staging → Prod), tracking release candidate artifacts (images, Helm charts, git revisions) across sequential stages with automated health verification and approval gates.
 
-16. **[Argo Rollouts](https://github.com/argoproj/argo-rollouts)** [![GitHub stars](https://img.shields.io/github/stars/argoproj/argo-rollouts?style=social&color=white)](https://github.com/argoproj/argo-rollouts/stargazers)  
+16. **[Argo Rollouts](https://github.com/argoproj/argo-rollouts)** [![GitHub_Stars](https://img.shields.io/github/stars/argoproj/argo-rollouts?style=social&color=white)](https://github.com/argoproj/argo-rollouts/stargazers)  
     *Progressive delivery controller for Kubernetes (CNCF Graduated, Apache 2.0).* Replaces the default Kubernetes Deployment object with an advanced `Rollout` CRD. Provides automated canary and blue/green rollouts, integrated metric analysis (Prometheus, Datadog, CloudWatch), automated rollbacks, and traffic routing via ingress controllers and service meshes.
 
-17. **[Keptn](https://github.com/keptn/keptn)** [![GitHub stars](https://img.shields.io/github/stars/keptn/keptn?style=social&color=white)](https://github.com/keptn/keptn/stargazers)  
+17. **[Keptn](https://github.com/keptn/keptn)** [![GitHub_Stars](https://img.shields.io/github/stars/keptn/keptn?style=social&color=white)](https://github.com/keptn/keptn/stargazers)  
     *Cloud-native application lifecycle orchestrator (CNCF Incubating, Apache 2.0).* Bridges release orchestration and Site Reliability Engineering (SRE). Uses Service Level Indicators (SLIs) and Service Level Objectives (SLOs) to automate release verification, deployment evaluations, and self-healing actions.
 
-18. **[PipeCD](https://github.com/pipe-cd/pipecd)** [![GitHub stars](https://img.shields.io/github/stars/pipe-cd/pipecd?style=social&color=white)](https://github.com/pipe-cd/pipecd/stargazers)  
+18. **[PipeCD](https://github.com/pipe-cd/pipecd)** [![GitHub_Stars](https://img.shields.io/github/stars/pipe-cd/pipecd?style=social&color=white)](https://github.com/pipe-cd/pipecd/stargazers)  
     *Unified GitOps continuous delivery system for multi-cloud and heterogeneous targets (CNCF Sandbox, Apache 2.0).* Provides a single control plane for deploying Kubernetes, Terraform, GCP Cloud Run, AWS Lambda, and AWS ECS. Features built-in deployment analysis, zero deployment credentials exposed outside the cluster, and automatic tracking of DORA metrics.
 
-19. **[Konflux](https://github.com/konflux-ci/konflux-ci)** [![GitHub stars](https://img.shields.io/github/stars/konflux-ci/konflux-ci?style=social&color=white)](https://github.com/konflux-ci/konflux-ci/stargazers)  
+19. **[Konflux](https://github.com/konflux-ci/konflux-ci)** [![GitHub_Stars](https://img.shields.io/github/stars/konflux-ci/konflux-ci?style=social&color=white)](https://github.com/konflux-ci/konflux-ci/stargazers)  
     *Software supply chain-secure release platform built on Tekton (Apache 2.0).* Designed to produce tamper-proof software artifacts by generating in-toto attestations, SLSA provenance records, and cryptographic Cosign signatures before promoting container images and binaries into enterprise production registries.
 
 ---
@@ -212,8 +212,8 @@ Contributions are welcome! To propose additions, updates, or corrections:
 2. **Create a branch** for your feature or tool addition (`git checkout -b add-tool-name`).
 3. **Add or edit entries in `README.md`** following the existing tabular or badge format:
    - For SaaS tools: verify specific starting pricing, free tier/trial limits, and company valuation.
-   - For Open-Source tools: include official repo URL, social star badge linked to `/stargazers`, and license information.
-4. **Sort entries properly** according to the established criteria (Company Size for SaaS, GitHub stars for Open-Source).
+   - For Open-Source tools: include official repo URL, social Stars_Badge linked to `/stargazers`, and license information.
+4. **Sort entries properly** according to the established criteria (Company Size for SaaS, GitHub_Stars for Open-Source).
 5. **Submit a Pull Request (PR)** with a concise summary of the changes.
 
 ---
